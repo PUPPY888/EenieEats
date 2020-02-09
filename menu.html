@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENU</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<style>
+			* {
+		  box-sizing: border-box;
+		}
+
+		img {
+		  vertical-align: middle;
+		}
+	
+	input[type=text] {
+		background-color: #FEA8C3;
+		color:white;
+		padding:0.7rem;
+		border-radius:0.5rem;
+		width:15.6rem;
+
+	</style>
+</head>
+<body style="margin:0px">
+	
+
+<div class="topnav" id="myTopnav">
+	<a href="index.html" >Home</a>
+  	<a href="menu.html">Menu</a>
+  	<a href="about-us.html">About Us</a>
+  
+  <a href="index.html" style="text-decoration: none;color: #EBE6E2;display: inline-block;width:70%;">
+		<img src = "resources/images/logo1.png" id="logo">
+	</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+	<div class= "menuinfo">
+	<div class="container">
+	  <div class="mySlides">
+	    <img src="resources/images/kimchi rice.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+	    <img src="resources/images/kimchi rice 2.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+	    <img src="resources/images/kimchi rice 3.jpg" style="width:100%">
+	  </div>
+	    
+	  <div class="mySlides">
+	    <img src="resources/images/kimchi rice 4.jpg" style="width:100%">
+	  </div>
+
+	    
+	  <a class="prev2" onclick="plusSlides(-1)">❮</a>
+	  <a class="next2" onclick="plusSlides(1)">❯</a>
+
+	  <div class="caption-container">
+	    <p id="caption"></p>
+	  </div>
+
+	  <div class="row">
+	    <div class="column">
+	      <img class="demo cursor" src="resources/images/kimchi rice.jpg" style="width:100%" onclick="currentSlide(1)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="resources/images/kimchi rice 2.jpg" style="width:100%" onclick="currentSlide(2)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="resources/images/kimchi rice 3.jpg" style="width:100%" onclick="currentSlide(3)" >
+	    </div>
+	    <div class="column">
+	      <img class="demo cursor" src="resources/images/kimchi rice 4.jpg" style="width:100%" onclick="currentSlide(4)" >
+	    </div>
+	    
+	  </div>
+	</div>
+
+		<div class = "description">
+			<div>
+				<h4 style="display:inline-block;"> KIMCHI FRIED RICE </h4>
+				<img src = "resources/images/heart icon.png" id="hearticon">
+				<img src = "resources/images/share icon.png" id="shareicon">
+			</div>
+			<div>
+			<p> Traditional Korean fried rice with spam and aged kimchi. Bold flavors in every bite. The spice levels could be adjusted along with the meat.</p>
+			<p>Ingredients: Rice, Kimchi, Spam, Onion, Garlic</p>
+			<p>
+			One tray feeds approximately 30 people. </p>
+			</div>
+
+		<div class="custom-select" style="width:200px;">
+  		<select>
+    		<option value="0">Select meat:</option>
+    		<option value="1">Chicken</option>
+    		<option value="2">Beef</option>
+    		<option value="3">Spam</option>
+ 	 	</select>
+		</div>
+		
+		<div class="custom-select" style="width:200px;">
+  		<select>
+    		<option value="0">Select quantity:</option>
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="3">4</option>
+    		<option value="3">5</option>
+ 	 	</select>
+		</div>
+
+		<div class="custom-select" style="width:200px;">
+  		<select>
+    		<option value="0">Select spice levels:</option>
+    		<option value="1">Mild</option>
+    		<option value="2">Spicy</option>
+    		<option value="3">Extra Spicy</option>
+    		<option value="3">FIRE SPICY</option>
+ 	 	</select>
+		</div>
+		
+		<p><button class="button" id="cartbutton">Add to Cart</button></p>
+		</div>
+	</div>	
+		
+
+		
+	<div>
+	<div>
+	<h1 style="display:inline-block;"> REVIEWS (0)</h1>
+		<img src="resources/images/star.png" class="reviewstar">
+		<img src="resources/images/star.png" class="reviewstar">
+		<img src="resources/images/star.png" class="reviewstar">
+		<img src="resources/images/star.png" class="reviewstar">
+		<img src="resources/images/star.png" class="reviewstar">
+	</div>
+	</div>
+	<div>
+	<p id="reviewdes"> Let others know what you think! </p>
+	</div>
+	<p><button class="button" id="reviewbutton">Write a Review</button></p>
+
+<div>
+		<h1> OTHER PEOPLE ALSO BOUGHT </h1>
+</div>
+
+<div class="content">
+
+				<div class="rice">
+					<img src="resources/images/fried rice.jpg">
+					<div class="textbox">
+					<h2>Traditional Fried Rice</h2>
+					<h3>Traditional fried rice. Available in vegetarian options or with meat.</h3>
+					</div>
+				</div>
+				<div class="musubi">
+					<img src="resources/images/spam musubi.jpg">
+					<div class="textbox">
+					<h2>Spam Musubi</h2>
+					<h3>Spam on rice, slathered with a sweet and savory sauce, wrapped in nori.</h3>
+					</div>
+				</div>
+				<div class="dumplings">
+					<img src="resources/images/dumplings.jpg">
+					<div class="textbox">
+					<h2>Pan Fried Dumplings</h2>
+					<h3>Pan-fried dumplings stuffed to the brim with meat and veggies. Vegetarian options are available.
+					</h3>
+					</div>
+				</div>
+</div>
+<div class = "footer">
+	<img src = "resources/images/logo1.png" id="logo2">
+		<div class = "footer-menu">
+			<div>
+			<span class = "menu-button">HOME</span>
+			</div>
+			<div>
+			<a href="menu.html" style="text-decoration: none;color: white;}">
+			<span class = "menu-button"> MENU</span>
+		</a>
+			</div>
+			<div>
+			<span class = "menu-button"> ABOUT US </span>
+			</div>
+		</div>
+	<div class= "email">
+	<form action="/action_page.php" >
+  	<input type="text" name="fname" placeholder="Email" style="display: inline-block;" id="emailtextbox">
+  	<input type="submit" value="Submit" id="submitbutton" style="display: inline-block;">
+	</form>
+	<p2 style="display: inline-block;padding:0.3rem;"> Stay in touch with us for weekly specials!</p2>
+	</div>
+
+	<div>
+		<img src="resources/images/social.png" id="social">
+	</div>
+	
+</div>
+<script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

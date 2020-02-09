@@ -1,0 +1,356 @@
+html{
+	background-color: #f6f8f9;
+}
+h1{
+	font-family: big snow;
+	font-size:30px;
+	color:#FEA8C3;
+	padding-left: 141px;
+}
+h2{
+	font-family: source sans pro regular;
+	font-size:25px;
+	color:#FEA8C3;
+}
+h3{
+	font-family: source sans pro regular;
+	font-size:17px;
+}
+
+
+h5{
+	
+padding-left: 8.5vw;
+  font-family: Big Snow;
+  font-size: 3vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fea8c3;
+  margin:0vw;
+	
+}
+h6{font-family: source sans pro;
+	font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+
+	color: #202124
+
+}
+
+
+p{
+	font-family: source sans pro;
+	font-size: 2vw;
+  line-height: 2;
+  letter-spacing: normal;
+
+	color: #202124
+
+
+
+
+}
+
+
+
+
+p3{	width:5% ;
+	height:2vw ;
+	font-size: 2vw;
+	font-family: source sans pro;
+	margin: auto;
+	color: #fea8c3;
+
+
+
+}
+
+
+
+ 
+
+
+#menubarabout{
+	color:white;
+}
+
+.menu{
+	font-family: big snow;
+	background:#7ED4D1;
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	color:#EBE6E2;
+	font-size:2rem;
+	width:100%;
+}
+.menu-button{
+	margin-right: 1rem;
+}
+.footer{
+	font-family: source sans pro;
+	background:#7ED4D1;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	width:100%;
+	padding-top: 20px ;
+}
+#logo{
+	height:35px;
+	margin-left: 20px;
+}
+#logo2{
+	height:35px;
+	margin-left: 20px;
+}
+/* Slideshow container */
+.slideshow-container {
+ 	width:100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: #7ED4D1;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #FEA8C3;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/
+
+.content{
+	padding-left: 141px;
+	padding-right: 141px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+
+.rice img{
+	width: 360px;
+	height: 203px;
+}
+
+.dumplings img{
+	width: 360px;
+	height: 203px;
+}
+
+.musubi img{
+	width: 360px;
+	height: 203px;
+}
+.textbox{
+	width: 360px;
+	height: 203px;
+	background-color: white;
+	padding:20px;
+}
+
+
+.abtustextbox{
+	width: 860px;
+	
+	padding-left: 8.5rem;
+	margin-right: 6rem;
+
+	
+}
+#nhipic{
+	width: 298px;
+	height:298px;
+	padding-right: 141px;
+	
+
+}
+
+
+
+
+.gallery{
+	width: 80%;
+	height:23.4%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 8%
+
+
+}
+.galleryimg{
+	width:30%;
+	height: inherit;
+	margin: 1%;
+	
+
+
+}
+
+.numpg{
+	padding-top:2.8rem;
+	padding-bottom: 2.5rem;
+
+
+
+}
+.aboutus{
+	padding-bottom: 25.6px;
+	padding-top: 25.6px;
+
+}
+.gallerytxt{
+
+	padding-bottom: 25.6px;
+	padding-top: 25.6px;
+}
+.arrows{
+	color: #fea8c3;
+}
+
+/*------------------- About Us tablet-------------- */
+@media only screen and (min-width: 700px) and (max-width:  1024px){
+
+	.abtustextbox{
+	width: 860px;
+	
+	padding-left: 8.5vw;
+	margin-right: 6vw;
+	}
+
+	#nhipic{
+	width: 298px;
+	height:298px;
+	padding-right: 8.8rem;
+	}
+	.gallery{
+	width: 80%;
+	height:23.4%;
+	display: flex;
+	flex-direction: column;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-left: 10%;
+	align-content: center;
+	
+	flex-direction: column;
+}
+.galleryimg{
+	width:50%;
+	height: auto;
+	margin: 1%;
+	
+
+}
+
+
+}
+
+	/*-------------------end of tablet-------------- */
+
+
+/* ---- mobile ---- */
+@media only screen and (max-width: 700px){
+	.abtustextbox{
+	width: 860px;
+	
+	padding-left: 8.5vw;
+	margin-right: 6vw;}
+
+	#nhipic{
+	width: 298px;
+	height:298px;
+	
+	}
+.gallery{
+	width: 80%;
+	height:23.4%;
+	display: flex;
+	flex-direction: column;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-left: 10%;
+	align-content: center;
+	
+	flex-direction: column;
+}
+
+.galleryimg{
+	width:80%;
+	height: auto;
+	margin: 1%;
+	
+
+}
+/* ---- End of Mobile ---- */
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eenie Eats</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+    .mySlides {
+      display:none;
+      width: 100%;
+    }
+    * {box-sizing: border-box}
+	body {font-family: Source Sans, sans-serif; margin:0}
+	.mySlides {display: none}
+	img {vertical-align: middle;}
+  	</style>
+</head>
+<body>
+	
+<div class="topnav" id="myTopnav">
+	
+  	<a href="index.html" >Home</a>
+  	<a href="menu.html">Menu</a>
+  	<a href="about-us.html">About Us</a>
+  <a href="index.html" style="text-decoration: none;color: #EBE6E2;display: inline-block;width:70%;">
+		<img src = "resources/images/logo1.png" id="logo">
+	</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <a href="menu.html" >
+		  <img src="resources/images/slideshow1.jpg" style="width:100%;">
+		</a>
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="resources/images/slideshow2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="resources/images/slideshow3.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+	
+
+<div>
+		<h1> POPULAR ITEMS </h1>
+</div>
+
+<div class="content">
+
+				<div class="rice">
+					<img src="resources/images/fried rice.jpg">
+					<div class="textbox">
+					<h2>Traditional Fried Rice</h2>
+					<h3>Traditional fried rice. Available in vegetarian options or with meat.</h3>
+					</div>
+				</div>
+				<div class="musubi">
+					<img src="resources/images/spam musubi.jpg">
+					<div class="textbox">
+					<h2>Spam Musubi</h2>
+					<h3>Spam on rice, slathered with a sweet and savory sauce, wrapped in nori.</h3>
+					</div>
+				</div>
+				<div class="dumplings">
+					<img src="resources/images/dumplings.jpg">
+					<div class="textbox">
+					<h2>Pan Fried Dumplings</h2>
+					<h3>Pan-fried dumplings stuffed to the brim with meat and veggies. Vegetarian options are available.
+					</h3>
+					</div>
+				</div>
+</div>
+
+<div class = "footer">
+	<img src = "resources/images/logo1.png" id="logo2">
+		<div class = "footer-menu">
+			<div>
+			<span class = "menu-button">HOME</span>
+			</div>
+			<div>
+			<a href="menu.html" style="text-decoration: none;color: white;}">
+			<span class = "menu-button"> MENU</span>
+		</a>
+			</div>
+			<div>
+			<span class = "menu-button"> ABOUT US </span>
+			</div>
+		</div>
+	<div class= "email">
+	<form action="/action_page.php" >
+  	<input type="text" name="fname" placeholder="Email" style="display: inline-block;" id="emailtextbox">
+  	<input type="submit" value="Submit" id="submitbutton" style="display: inline-block;">
+	</form>
+	<p2 style="display: inline-block;padding:0.3rem;"> Stay in touch with us for weekly specials!</p2>
+	</div>
+
+	<div>
+		<img src="resources/images/social.png" id="social">
+	</div>
+	
+</div>
+
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+ </body>
+</html>
